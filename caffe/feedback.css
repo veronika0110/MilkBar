@@ -1,0 +1,81 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url(back3.png);
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #003249;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #105778;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #105778;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group label {
+    padding: 8px 20px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    background-color: #105778;
+    color: #fff;
+}
+
+textarea,
+input[type="tel"],
+input[type="email"],
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #105778;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #656363;
+}

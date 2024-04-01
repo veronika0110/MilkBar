@@ -1,0 +1,83 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #003249;
+}
+header {
+    background-color: #003249;
+    background: url(back3.png);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Dancing Script';
+    
+}
+
+.header-line {
+    padding-top: 50px;
+    background-color: #003249;
+    background: url(back3.png);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 23px;
+    padding-top: 50px;
+    margin-right: 25px;
+
+    transition: color 0.3s linear;
+}
+
+
+.nav-item:hover {
+    color: #105778;
+}
+h1 {
+    margin-top: 15;
+}
+.menu-category {
+    background-color: #ebf7fc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.menu-category h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.menu-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+}
+.menu-item h2 {
+    margin-top: 0;
+}
+.menu-item p {
+    margin-bottom: 5px;
+}
+.menu-item span {
+    font-weight: bold;
+    color: #333;
+}
+.menu-item .menu-image {
+    float: right;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 1px solid #ebf7fc;
+}

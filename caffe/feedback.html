@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Help Us Improve!</h1>
+    <p>If you have any feedback or suggestions regarding our dishes and service, please leave your review.</p>
+    <form id="feedbackForm" onsubmit="return validateForm()">
+        <div>
+            <label for="food_rating">Dishes</label>
+            <div class="radio-group">
+                <input type="radio" id="food_unsatisfactory" name="food_rating" value="unsatisfactory">
+                <label for="food_unsatisfactory">Unsatisfactory</label>
+                <input type="radio" id="food_average" name="food_rating" value="average">
+                <label for="food_average">Average</label>
+                <input type="radio" id="food_good" name="food_rating" value="good">
+                <label for="food_good">Good</label>
+                <input type="radio" id="food_excellent" name="food_rating" value="excellent">
+                <label for="food_excellent">Excellent</label>
+            </div>
+        </div>
+        <div>
+            <label for="service_rating">Service</label>
+            <div class="radio-group">
+                <input type="radio" id="service_unsatisfactory" name="service_rating" value="unsatisfactory">
+                <label for="service_unsatisfactory">Unsatisfactory</label>
+                <input type="radio" id="service_average" name="service_rating" value="average">
+                <label for="service_average">Average</label>
+                <input type="radio" id="service_good" name="service_rating" value="good">
+                <label for="service_good">Good</label>
+                <input type="radio" id="service_excellent" name="service_rating" value="excellent">
+                <label for="service_excellent">Excellent</label>
+            </div>
+        </div>
+        <div>
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+        </div>
+        <div>
+            <label for="contact_info">Please leave your contact details</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="text" id="name" name="name" placeholder="Name (optional)">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+    function validateForm() {
+        var foodRating = document.querySelector('input[name="food_rating"]:checked');
+        var serviceRating = document.querySelector('input[name="service_rating"]:checked');
+        var comment = document.getElementById("comment").value;
+        var phone = document.getElementById("phone").value;
+        var email = document.getElementById("email").value;
+
+        if (!foodRating || !serviceRating || comment.trim() === "" || phone.trim() === "" || email.trim() === "") {
+            alert("Please fill in all fields.");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+</body>
+</html>
